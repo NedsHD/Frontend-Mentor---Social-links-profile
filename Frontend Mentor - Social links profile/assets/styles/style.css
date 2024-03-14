@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+    --Inter-font: 'Inter', sans-serif;
+  }
+  body{
+    font-family: var(--Inter-font);
+    min-height: 100vh;
+    background-color: var(--Off-Black);
+  }
+  ul{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .container{
+    height: 100%;
+    padding: 60px 0;
+  }
+  .card{
+    width: 327px;
+    background-color: var(--Dark-Grey);
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px auto;
+  }
+  
+  .card, #social-media a{
+    color: var(--White);
+  }
+  figure img{
+    width: 90px; 
+    height: 90px;
+    border-radius: 50%;
+  }
+  h2{
+    font-weight: 400; 
+  }
+  h4{
+    color: var(--Green);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 7px 0;
+  }
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 25px 0;
+  }
+  
+  #social-media li a{
+    display: block;
+    background-color: var(--Grey);
+    padding: 16px 0 ;
+    font-size: 14px;
+    border-radius: 7px;
+  }
+  #social-media li a:hover{
+    transition: all 0.3s;
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    font-weight: 600;
+  }
+  #social-media li:not(:last-child){
+    margin-bottom: 16px;
+  }
+  
+  /* Estilos específicos para pantallas de escritorio */
+  @media (min-width: 768px) {
+    .desktop-card {
+      width: 327px;
+      background-color: var(--Dark-Grey);
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 30px; /* Espaciado entre tarjetas duplicadas */
+      margin-left: 30px; /* Margen a la izquierda para la tarjeta duplicada */
+      float: right; /* Alinea la tarjeta a la derecha */
+    }
+  }
+  
